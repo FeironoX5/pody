@@ -1,0 +1,16 @@
+
+<h1 class="title">Shorts</h1>
+
+<div class="shorts">
+  <div class="card-big" *ngFor="let short of shorts | async">
+    <h2>{{short.title}}</h2>
+    <p>{{short.description}}</p>
+    <br>
+    <p [routerLink]="'/users/' + short.author">{{short.author}}</p>
+    <button class="clap" (click)="like(short)"><mat-icon>thumb_up</mat-icon><span>{{short.likes}}</span></button>
+  </div>
+
+</div>
+<div class="over" *ngIf="(shorts | async) === null">
+  <img width="150" src="https://lux.loli.net/2020/09/09/DIZAIN-BEZ-NAZVANIY-41053f980ab35979c0.png">
+</div>

@@ -1,0 +1,16 @@
+mat-form-field {
+  width: 100%;
+}
+.fileinput {
+  width: 100%;
+}
+.fileinput .form-group{margin: 20px 0; margin-bottom: 30px;}
+.fileinput input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none; width: 0; height: 0;}
+.fileinput .label{width:calc(100%-4px);border:2px dashed grey;border-radius:5px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center;}
+.fileinput .label mat-icon,.fileinput .label .tit{color:grey;transition:200ms color; font-size:35px;}
+.fileinput .label:hover{border:2px solid #a0a6b1}
+.fileinput .label:hover mat-icon,.fileinput .label:hover .tit{color: #a0a6b1}
+button {
+  background: #f6244c;
+  color: white;
+}

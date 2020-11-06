@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Report a bug</h2>
+<div mat-dialog-content>
+    <mat-form-field style="width: 80vw">
+        <textarea [(ngModel)]="data" style="resize: none; height: 60vh;" matInput placeholder="Type here..."></textarea>
+    </mat-form-field>
+</div>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

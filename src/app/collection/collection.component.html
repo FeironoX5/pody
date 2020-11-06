@@ -1,0 +1,21 @@
+<div class="cover">
+    <div>
+        <h1 class="title" style="color: var(--text-color)!important;">{{collection.title}}</h1>
+    </div>
+</div>
+<div class="over" *ngIf="collection === null">
+    <img width="150" src="https://lux.loli.net/2020/09/09/DIZAIN-BEZ-NAZVANIY-41053f980ab35979c0.png">
+</div>
+<div class="shorts">
+
+    <div class="card" *ngFor="let item of data" (click)="play(item.title, item.trackid)">
+        <div class="image"
+             [ngStyle]="{'background': 'no-repeat center/cover url(https://firebasestorage.googleapis.com/v0/b/podcasts-letovo.appspot.com/o/Podcasts%2FImages%2F' + item.img + '?alt=media)'}"></div>
+        <div class="text">
+            <h2>{{item.title}}</h2>
+            <p>{{item.sdescription}}</p>
+        </div>
+    </div>
+</div>
+
+

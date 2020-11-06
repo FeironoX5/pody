@@ -1,0 +1,17 @@
+<h1 class="title">{{getName()}}</h1>
+<div class="card-big">
+    <button mat-raised-button>Ban</button>
+    <button mat-raised-button>Send message</button>
+</div>
+<div class="cards-list">
+    <div *ngFor="let podcast of podcasts | async" (click)="play(podcast.title, podcast.trackid)">
+        <div class="card" *ngIf="podcast.author === useremail">
+            <div class="image"
+                 [ngStyle]="{'background': 'no-repeat center/cover url(https://firebasestorage.googleapis.com/v0/b/podcasts-letovo.appspot.com/o/Podcasts%2FImages%2F' + podcast.img + '?alt=media)'}"></div>
+            <div class="text">
+                <h2>{{podcast.title}}</h2>
+                <p>{{podcast.sdescription}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<h1 class="title">Posting</h1>
+<p style="margin-left: 40px;" *ngIf="!getProfile().emailVerified">Please, verify your email first. <br><span
+        style="color: #f6244c; cursor: pointer" (click)="sendEmail()">Did not get the email?</span></p>
+<form style="padding: 0 50px; overflow-y: scroll; height: 75vh;" *ngIf="getProfile().emailVerified">
+    <mat-form-field
+            matTooltip="Short should be not longer than 5 minutes. You can announce something, or just tell a fact. Podcast should be longer than 15 minutes.">
+        <mat-label>Type of the post</mat-label>
+        <mat-select name="select" [(ngModel)]="type">
+            <mat-option value="Podcast">Podcast</mat-option>
+            <mat-option value="Short">Short</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field color="primary">
+        <mat-label>Title</mat-label>
+        <input matInput [(ngModel)]="title" name="title" placeholder="Sushi Podcast">
+    </mat-form-field>
+    <mat-form-field *ngIf="type !== 'Short'">
+        <mat-label>What is your podcast about?</mat-label>
+        <input matInput [(ngModel)]="sdescription" name="shortdescription"
+               placeholder="Tell us shortly about Sushi Podcast" maxlength="35">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea [(ngModel)]="description" maxlength="10000" name="description" matInput
+                  placeholder="Sushi Podcast Description"></textarea>
+    </mat-form-field>
+    <mat-form-field *ngIf="type !== 'Short'">
+        <mat-label>Tag</mat-label>
+        <mat-select [(ngModel)]="tag" name="tags">
+            <mat-option *ngFor="let tag of tags" [value]="tag.title">{{tag.title}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-card style="background: var(--bg-color); color: var(--text-color); margin-top: 30px; margin-bottom: 40px;">
+        <mat-card-title>How to create a cover correctly?</mat-card-title>
+        <mat-card-content>
+            <p>
+                Cover art is an essential element of a podcast. A memorable picture will help promote your project.
+                Podcasts are displayed with small icons, so try to avoid small details that are difficult to see, use
+                contrasting colors and vibrant imagery.
+            </p>
+            <a href="https://www.canva.com/ru_ru/sozdat/oblozhku-dlya-alboma/">Read on Canva ></a>
+        </mat-card-content>
+    </mat-card>
+    <div class="fileinput" *ngIf="type !== 'Short'">
+        <div class="form-group">
+            <label class="label">
+                <span class="tit">Select image (.png, .jpg)</span>
+                <input id="image"
+                       accept=".png,.jpg"
+                       (change)="onImageSelected($event)" name="filef" type="file">
+            </label>
+        </div>
+    </div>
+    <div class="fileinput" *ngIf="type !== 'Short'">
+        <div class="form-group">
+            <label class="label">
+                <span class="tit">Select audio (.mp3, .wav)</span>
+                <input id="file"
+                       accept=".mp3,.wav"
+                       (change)="onFileSelected($event)" name="files" type="file">
+            </label>
+        </div>
+    </div>
+
+    <button mat-raised-button (click)="upload()">Submit</button>
+</form>
+

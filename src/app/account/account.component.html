@@ -1,0 +1,47 @@
+<h1 class="title">Account settings</h1>
+<div class="card-big">
+    <div class="primage"
+         [ngStyle]="getUser().photoURL !== null && {'background': 'url(' + getUser().photoURL + ') no-repeat center/cover'} || {'background': 'url(https://i.stack.imgur.com/YOIqi.jpg?s=328&g=1) no-repeat center/cover'}"></div>
+    <h2>{{getUser().displayName}}</h2>
+    <p [matTooltip]="getUser().emailVerified && 'Email verified' || 'Email is not verified'"
+       [ngStyle]="getUser().emailVerified && {'color': '#21ba0f'} || {'color': 'red'}">
+        {{getUser().email}}
+    </p>
+    <br>
+    <button mat-raised-button (click)="edit = !edit" *ngIf="!edit">Edit</button>
+    <button mat-raised-button (click)="logOut()">Sign out</button>
+</div>
+<div class="cards-list">
+    <div *ngIf="!edit">
+        <div *ngFor="let podcast of podcasts | async" (click)="play(podcast.title, podcast.trackid)">
+            <div class="card" *ngIf="podcast.author === getUser().email">
+                <div class="image"
+                     [ngStyle]="{'background': 'no-repeat center/cover url(https://firebasestorage.googleapis.com/v0/b/podcasts-letovo.appspot.com/o/Podcasts%2FImages%2F' + podcast.img + '?alt=media)'}"></div>
+                <div class="text">
+                    <h2>{{podcast.title}}</h2>
+                    <p>{{podcast.sdescription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form *ngIf="edit" id="change" style="padding: 0 50px; overflow-y: scroll; height: 75vh;">
+        <h3>Edit password</h3>
+        <mat-form-field color="primary">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" [(ngModel)]="password" name="password">
+        </mat-form-field>
+        <button mat-raised-button (click)="updatePassword()">Save</button>
+        <mat-divider></mat-divider>
+        <h3>Edit information</h3>
+        <mat-form-field color="primary">
+            <mat-label>Image URL</mat-label>
+            <input matInput type="url" [(ngModel)]="imageurl" name="imageurl">
+        </mat-form-field>
+        <mat-form-field color="primary">
+            <mat-label>Display name</mat-label>
+            <input matInput type="text" [(ngModel)]="displayname" name="disname">
+        </mat-form-field>
+        <button mat-raised-button (click)="updateImageAndName()">Save</button>
+
+    </form>
+</div>

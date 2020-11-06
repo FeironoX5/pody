@@ -1,0 +1,47 @@
+.card-big {
+  position: static!important;
+  display: inline-block;
+  border-radius: 12px;
+  transition: 0.2s;
+  margin: 20px;
+  width: calc(50% - 40px);
+}
+.shorts {
+  width: 100vw;
+  height: 90vh;
+  overflow-y: scroll;
+}
+.card-big:hover {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+.card-big h2 {
+  margin-top: 10px;
+}
+.clap {
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 0.4rem;
+  max-width: 200px;
+  transition: all ease 0.3s;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  background: var(--grey-color);
+  padding: 0.5rem 0.5rem 0.3rem;
+}
+
+.clap mat-icon {
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+.clap span {
+  font-size: 0.8rem;
+}
+@media (max-width: 1100px) {
+  .card-big {
+    width: calc(100vw - 80px);
+    left: 20px;
+  }
+}

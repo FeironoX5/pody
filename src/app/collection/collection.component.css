@@ -1,0 +1,58 @@
+.card {
+    position: static !important;
+    display: inline-block;
+    border-radius: 12px;
+    transition: 0.2s;
+    margin: 20px;
+    width: calc(50% - 40px);
+}
+
+.shorts {
+    width: 100vw;
+    height: 90vh;
+    overflow-y: scroll;
+    padding-left: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+.cover {
+    width: 100vw;
+    height: 40vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background: url(https://lux.loli.net/2020/09/07/DIZAIN-BEZ-NAZVANIY-356bd0c066860af34d.png) no-repeat center/cover;
+}
+
+.cover div {
+    height: 100%;
+    width: 100%;
+    border: 0.1px solid transparent;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cover h1 {
+    font-size: 7vh;
+    line-height: 15vh;
+    margin: 25vh 0 0 30px;
+    overflow: inherit;
+}
+
+@media (max-width: 1100px) {
+    .card {
+        width: calc(100vw - 80px);
+        left: 20px;
+    }
+    .cover h1 {
+        margin: 25vh 0 0;
+        text-align: center;
+    }
+}

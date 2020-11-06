@@ -1,0 +1,29 @@
+#player {
+  transition: 1s;
+  margin: 0!important;
+  padding: 0!important;
+  overflow: hidden;
+}
+#playerx {
+  display: none;
+}
+#playerm {
+  width: 100vw;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: none;
+  margin: 0!important;
+  padding: 0!important;
+  background: var(--bg-color);
+}
+@media (max-width: 1100px) {
+  #player{
+    display: none;
+  }
+  #playerm {
+    display: block;
+  }
+}

@@ -1,0 +1,57 @@
+<h1 class="title">Settings</h1>
+
+<mat-list style="margin-top: 25px;">
+    <div class="t" mat-subheader>Interface</div>
+    <mat-list-item>
+        <mat-icon mat-list-icon>brightness_4</mat-icon>
+        <div mat-line>
+            Dark mode<mat-slide-toggle id="dark" style="float: right;" (toggleChange)="darkService.changeTheme()" name="dark" [checked]="!darkService.dark"></mat-slide-toggle>
+        </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <div class="t" mat-subheader>Information</div>
+    <mat-list-item>
+        <mat-icon mat-list-icon>build</mat-icon>
+        <div mat-line>
+            Version
+        </div>
+        <div mat-line><b>β1.8</b></div>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon mat-list-icon>bug_report</mat-icon>
+        <div mat-line>
+            Report a bug
+        </div>
+        <button style="float: right;" mat-raised-button color="primary" (click)="dialogsService.openBugDialog()">Report</button>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon mat-list-icon>article</mat-icon>
+        <div mat-line>
+            Terms of service
+        </div>
+        <button style="float: right;" mat-raised-button color="primary" (click)="dialogsService.openTermsDialog()">View</button>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon mat-list-icon>developer_mode</mat-icon>
+        <div mat-line>
+            About developer
+        </div>
+        <div mat-line>
+            Gleb Kiva <b><a href="https://vk.com/feironox5">(@feironox5)</a></b>
+        </div>
+        <iframe style="float: right;" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B6%D0%B5%D1%80%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&default-sum=30&button-text=13&yamoney-payment-type=on&button-size=s&button-color=black&successURL=&quickpay=small&account=410015196021933&" width="125" height="25" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon mat-list-icon>history_edu</mat-icon>
+        <div mat-line>
+            Writer
+        </div>
+        <div mat-line>
+            Daria Lashutina <b><a href="https://vk.com/tomiddleearth">(@tomiddleearth)</a></b>
+        </div>
+
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+</mat-list>

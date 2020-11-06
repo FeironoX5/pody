@@ -1,0 +1,61 @@
+<h1 class="title">Podcasts</h1>
+<div class="card-big" *ngFor="let podcast of wpodcast | async">
+    <h2>Categories</h2>
+    <mat-chip-list multiple>
+        <mat-chip (click)="activetag = tag.title" [selected]="tag.title === activetag" *ngFor="let tag of tags">
+            <mat-icon>{{tag.icon}}</mat-icon>
+            {{tag.title}}</mat-chip>
+    </mat-chip-list>
+    <mat-form-field style="width: 100%; margin-top: 7px;">
+        <mat-label>Sort by</mat-label>
+        <mat-select>
+            <mat-option value="recent">
+                Recency
+            </mat-option>
+            <mat-option value="popular">
+                Popularity
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button mat-raised-button style="width: 100%; margin-top: -4px;" color="primary" routerLink="/collection">Collections</button>
+</div>
+<div class="cards-list">
+    <div *ngFor="let wpod of wpodcast | async">
+        <div class="card-an" *ngIf="activetag === 'All'" [routerLink]="wpod.link" [ngStyle]="{'background': 'no-repeat center/cover url(' + wpod.img + ')'}">
+            <div class="card-an-content">
+                <p>Recommended</p>
+                <h1>{{wpod.title}}</h1>
+            </div>
+        </div>
+    </div>
+    <div *ngFor="let podcast of podcasts | async">
+        <div class="card" *ngIf="podcast.tag === activetag || activetag === 'All'">
+            <div (click)="play(podcast.title, podcast.trackid)" class="image"
+                 [ngStyle]="{'background': 'no-repeat center/cover url(https://firebasestorage.googleapis.com/v0/b/podcasts-letovo.appspot.com/o/Podcasts%2FImages%2F' + podcast.img + '?alt=media)'}"></div>
+            <div class="text">
+                <h2>{{podcast.title}}</h2>
+                <p>{{podcast.sdescription}}</p>
+            </div>
+            <button class="more" mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_horizontal</mat-icon>
+            </button>
+            <mat-menu class="more" #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>favorite</mat-icon>
+                    <span>Like</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>chat_bubble</mat-icon>
+                    <span>Comment</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>emoji_emotions</mat-icon>
+                    <span>View author</span>
+                </button>
+            </mat-menu>
+        </div>
+    </div>
+</div>
+<div class="over" *ngIf="(podcasts | async) === null">
+    <img width="150" src="https://lux.loli.net/2020/09/09/DIZAIN-BEZ-NAZVANIY-41053f980ab35979c0.png">
+</div>

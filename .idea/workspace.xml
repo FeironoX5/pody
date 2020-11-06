@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd2175a2-32d4-4eee-adec-0a74f68577b3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h0pxu3IoaYrv7Jjre50VsQfYz2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calendar" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Users\79152\Downloads\pody\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\79152\Downloads\pody\src\assets\icons" />
+      <recent name="C:\Users\79152\Downloads\pody\src\assets" />
+      <recent name="C:\Users\79152\Downloads\pody\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79152\Downloads\pody\src\assets" />
+      <recent name="C:\Users\79152\Downloads\pody\src\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (untitled)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (untitled)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd2175a2-32d4-4eee-adec-0a74f68577b3" name="Default Changelist" comment="" />
+      <created>1599158114121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599158114121</updated>
+      <workItem from="1599158115253" duration="2621000" />
+      <workItem from="1599197259099" duration="11902000" />
+      <workItem from="1599220351870" duration="17386000" />
+      <workItem from="1599282353050" duration="11565000" />
+      <workItem from="1599321128483" duration="413000" />
+      <workItem from="1599325285986" duration="1743000" />
+      <workItem from="1599418701529" duration="1438000" />
+      <workItem from="1599459271182" duration="18366000" />
+      <workItem from="1599559982606" duration="911000" />
+      <workItem from="1599562214172" duration="26000" />
+      <workItem from="1599562256640" duration="3000" />
+      <workItem from="1599563383166" duration="6081000" />
+      <workItem from="1599586733028" duration="599000" />
+      <workItem from="1599633163512" duration="24590000" />
+      <workItem from="1599711196260" duration="4070000" />
+      <workItem from="1599800092530" duration="441000" />
+      <workItem from="1599802773770" duration="2134000" />
+      <workItem from="1599815613716" duration="2975000" />
+      <workItem from="1599838543375" duration="3188000" />
+      <workItem from="1600020378732" duration="5236000" />
+      <workItem from="1600062547062" duration="1710000" />
+      <workItem from="1600098428666" duration="413000" />
+      <workItem from="1600177208089" duration="4275000" />
+      <workItem from="1600270159667" duration="18000" />
+      <workItem from="1600791747115" duration="15000" />
+      <workItem from="1603893712030" duration="2905000" />
+      <workItem from="1603904615459" duration="946000" />
+      <workItem from="1604125788424" duration="1982000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="1" key="#Plugins" timestamp="1599562221135">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="1" key="#Plugins/0.0.1280.720@0.0.1280.720" timestamp="1599562221135" />
+    <state x="321" y="96" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599560002744">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="321" y="96" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720@0.0.1280.720" timestamp="1599560002744" />
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1600270175358">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1600270175358" />
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom" timestamp="1604130232739">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1604130232739" />
+    <state width="1259" height="176" key="GridCell.Tab.0.center" timestamp="1604130232739">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1604130232739" />
+    <state width="1259" height="176" key="GridCell.Tab.0.left" timestamp="1604130232738">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1604130232738" />
+    <state width="1259" height="176" key="GridCell.Tab.0.right" timestamp="1604130232739">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1604130232739" />
+    <state x="142" y="5" key="SettingsEditor" timestamp="1599563608555">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="142" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1599563608555" />
+    <state x="297" y="161" key="run.anything.popup" timestamp="1599718307658">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1599718307658" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1600178435737">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1600178435737" />
+  </component>
+</project>
